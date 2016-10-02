@@ -1,0 +1,806 @@
+<div class="tableToggleMenu">
+	<div class="monthToggle active" data-month="1">一月</div>
+	<div class="monthToggle active" data-month="2">二月</div>
+	<div class="monthToggle active" data-month="3">三月</div>
+	<div class="monthToggle active" data-month="4">四月</div>
+	<div class="monthToggle active" data-month="5">五月</div>
+	<div class="monthToggle active" data-month="6">六月</div>
+	<div class="monthToggle active" data-month="7">七月</div>
+	<div class="monthToggle active" data-month="8">八月</div>
+	<div class="monthToggle active" data-month="9">九月</div>
+	<div class="monthToggle active" data-month="10">十月</div>
+	<div class="monthToggle active" data-month="11">十一月</div>
+	<div class="monthToggle active" data-month="12">十二月</div>
+</div>
+
+<table class="dataTable verification verification_acceptance_itemize 檢瓶課">
+	<caption>允收放行(明細)</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="recordDate">記錄日期</th>
+			<th class="text" data-field-name="itemizeIndex">項次</th>
+			<th class="text" data-field-name="productReference">產品編號</th>
+			<th class="text" data-field-name="productionCost">製造成本</th>
+			<th class="text" data-field-name="quantity">允收數量</th>
+			<th class="text" data-field-name="reduction">單項節省</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="recordDate">記錄日期</th>
+			<th class="text" data-field-name="itemizeIndex">項次</th>
+			<th class="text" data-field-name="productReference">產品編號</th>
+			<th class="text" data-field-name="productionCost">製造成本</th>
+			<th class="text" data-field-name="quantity">允收數量</th>
+			<th class="text" data-field-name="reduction">單項節省</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_acceptance_itemize" data-target-table="record_acceptance">
+		<tr class="skeletonRow" data-record-index="">
+			<td class="numeric hidden" data-field-name="divisionID"></td>
+			<td class="numeric hidden" data-field-name="departmentID"></td>
+			<td class="numeric hidden" data-field-name="objectiveID"></td>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="date" data-field-name="recordDate"></td>
+			<td class="numeric" data-field-name="itemizeIndex"></td>
+			<td class="text" data-field-name="productReference"></td>
+			<td class="currency" data-field-name="productionCost"></td>
+			<td class="numeric" data-field-name="quantity"></td>
+			<td class="currency" data-field-name="reduction"></td>
+			<td class="longText" data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_acceptance 檢瓶課">
+	<caption>允收放行</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="quantity">總數量</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="quantity">總數量</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_acceptance">
+		<tr class="skeletonRow" data-record-index="">
+			<td class="numeric hidden" data-field-name="divisionID"></td>
+			<td class="numeric hidden" data-field-name="departmentID"></td>
+			<td class="numeric hidden" data-field-name="objectiveID"></td>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="numeric" data-field-name="quantity"></td>
+			<td class="currency" data-field-name="reduction"></td>
+			<td class="currency" data-field-name="monthlyReductionTarget"></td>
+			<td class="percent" data-field-name="achieveRate"></td>
+			<td class="longText" data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_expense 工電務課-電務 人事總務課 品管課 塑化課">
+	<caption>降低費用</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="historicalExpense">平均費用</th>
+			<th class="text " data-field-name="expense">當月費用</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text " data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="historicalExpense">平均費用</th>
+			<th class="text " data-field-name="expense">當月費用</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text " data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_expense" data-target-table="record_expense">
+		<tr class="skeletonRow" data-record-index="">
+			<td class="numeric hidden" data-field-name="divisionID"></td>
+			<td class="numeric hidden" data-field-name="departmentID"></td>
+			<td class="numeric hidden" data-field-name="objectiveID"></td>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="date" data-field-name="itemTitle"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="currency" data-field-name="historicalExpense"></td>
+			<td class="currency" data-field-name="expense"></td>
+			<td class="currency" data-field-name="reduction"></td>
+			<td class="currency" data-field-name="monthlyReductionTarget"></td>
+			<td class="percent" data-field-name="achieveRate"></td>
+			<td class="longText " data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_frequency 倉儲課 採購資材課">
+	<caption>發生次數</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text hidden" data-field-name="itemID">itemID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="unitCost">單價</th>
+			<th class="text" data-field-name="averageCount">平均次數</th>
+			<th class="text" data-field-name="count">當月次數</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text hidden" data-field-name="itemID">itemID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="unitCost">單價</th>
+			<th class="text" data-field-name="averageCount">平均次數</th>
+			<th class="text" data-field-name="count">當月次數</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_frequency" data-target-table="record_frequency">
+		<tr class="skeletonRow" data-record-index="">
+			<td class="numeric hidden" data-field-name="divisionID"></td>
+			<td class="numeric hidden" data-field-name="departmentID"></td>
+			<td class="numeric hidden" data-field-name="objectiveID"></td>
+			<td class="numeric hidden" data-field-name="itemID"></td>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="text" data-field-name="itemTitle"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="currency" data-field-name="unitCost"></td>
+			<td class="numeric" data-field-name="averageCount"></td>
+			<td class="numeric" data-field-name="count"></td>
+			<td class="currency" data-field-name="reduction"></td>
+			<td class="currency" data-field-name="monthlyReductionTarget"></td>
+			<td class="percent" data-field-name="achieveRate"></td>
+			<td class="longText" data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_materialUsage 模具維修課 製造課 工電務課-工務">
+	<caption>減少用量</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text hidden" data-field-name="itemID">itemID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="unitCost">單價</th>
+			<th class="text" data-field-name="averageQuantity">平均用量</th>
+			<th class="text" data-field-name="quantity">當月用量</th>
+			<th class="text" data-field-name="measureUnit">計量單位</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text hidden" data-field-name="itemID">itemID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="unitCost">單價</th>
+			<th class="text" data-field-name="averageQuantity">平均用量</th>
+			<th class="text" data-field-name="quantity">當月用量</th>
+			<th class="text" data-field-name="measureUnit">計量單位</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_materialUsage" data-target-table="record_materialUsage">
+		<tr class="skeletonRow" data-record-index="">
+			<td class="numeric hidden" data-field-name="divisionID"></td>
+			<td class="numeric hidden" data-field-name="departmentID"></td>
+			<td class="numeric hidden" data-field-name="objectiveID"></td>
+			<td class="numeric hidden" data-field-name="itemID"></td>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="text" data-field-name="itemTitle"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="currency" data-field-name="unitCost"></td>
+			<td class="largeQuantity" data-field-name="averageQuantity"></td>
+			<td class="largeQuantity" data-field-name="quantity"></td>
+			<td class="text" data-field-name="measureUnit"></td>
+			<td class="currency" data-field-name="reduction"></td>
+			<td class="currency" data-field-name="monthlyReductionTarget"></td>
+			<td class="percent" data-field-name="achieveRate"></td>
+			<td class="longText" data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_mouldTooling_itemize 設計課-製成品組">
+	<caption>模具成本(明細)</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text hidden" data-field-name="itemID">itemID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="unitCostMIT">預估台製單價</th>
+			<th class="text" data-field-name="quantity">數量</th>
+			<th class="text" data-field-name="measureUnit">計量單位</th>
+			<th class="text" data-field-name="costMIT">預估台製費用</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text hidden" data-field-name="itemID">itemID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="unitCostMIT">預估台製單價</th>
+			<th class="text" data-field-name="quantity">數量</th>
+			<th class="text" data-field-name="measureUnit">計量單位</th>
+			<th class="text" data-field-name="costMIT">預估台製費用</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_mouldTooling_itemize" data-target-table="record_mouldTooling">
+		<tr class="skeletonRow" data-record-index="">
+			<td class="numeric hidden" data-field-name="divisionID"></td>
+			<td class="numeric hidden" data-field-name="departmentID"></td>
+			<td class="numeric hidden" data-field-name="objectiveID"></td>
+			<td class="numeric hidden" data-field-name="itemID"></td>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="text" data-field-name="evaluationMethod"></td>
+			<td class="text" data-field-name="itemTitle"></td>
+			<td class="currency" data-field-name="unitCostMIT"></td>
+			<td class="numeric" data-field-name="quantity"></td>
+			<td class="text" data-field-name="measureUnit"></td>
+			<td class="currency" data-field-name="costMIT"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_mouldTooling 設計課-製成品組">
+	<caption>模具成本</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="costMIT">預估台製總額</th>
+			<th class="text" data-field-name="costChina">實際陸製總價</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="costMIT">預估台製總額</th>
+			<th class="text" data-field-name="costChina">實際陸製總價</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_mouldTooling">
+		<tr class="skeletonRow" data-record-index="">
+			<td class="numeric hidden" data-field-name="divisionID"></td>
+			<td class="numeric hidden" data-field-name="departmentID"></td>
+			<td class="numeric hidden" data-field-name="objectiveID"></td>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="currency" data-field-name="costMIT"></td>
+			<td class="currency" data-field-name="costChina"></td>
+			<td class="currency" data-field-name="reduction"></td>
+			<td class="currency" data-field-name="monthlyReductionTarget"></td>
+			<td class="percent" data-field-name="achieveRate"></td>
+			<td class="longText" data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_operation 檢瓶課 充填組立課 加工課-印刷組 加工課-噴漆組 塑化課 工電務課-工務 工電務課-電務">
+	<caption>縮短時間</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="unitCost">單價</th>
+			<th class="text" data-field-name="averageTimeSpent">平均耗時</th>
+			<th class="text" data-field-name="timeSpent">當月耗時</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="unitCost">單價</th>
+			<th class="text" data-field-name="averageTimeSpent">平均耗時</th>
+			<th class="text" data-field-name="timeSpent">當月耗時</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_operation" data-target-table="record_operation">
+		<tr class="skeletonRow" data-record-index="">
+			<td class="numeric hidden" data-field-name="divisionID"></td>
+			<td class="numeric hidden" data-field-name="departmentID"></td>
+			<td class="numeric hidden" data-field-name="objectiveID"></td>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="text" data-field-name="itemTitle"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="currency" data-field-name="unitCost"></td>
+			<td class="numeric" data-field-name="averageTimeSpent"></td>
+			<td class="numeric" data-field-name="timeSpent"></td>
+			<td class="currency" data-field-name="reduction"></td>
+			<td class="currency" data-field-name="monthlyReductionTarget"></td>
+			<td class="percent" data-field-name="achieveRate"></td>
+			<td class="longText" data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_recycle 倉儲課 工電務課-工務 製造課">
+	<caption>回收利用</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text hidden" data-field-name="itemID">itemID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="unitCost">單價</th>
+			<th class="text" data-field-name="recycleCost">回收成本</th>
+			<th class="text" data-field-name="quantity">回收數量</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text hidden" data-field-name="itemID">itemID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="itemTitle">項目名稱</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="unitCost">單價</th>
+			<th class="text" data-field-name="recycleCost">回收成本</th>
+			<th class="text" data-field-name="quantity">回收數量</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_recycle" data-target-table="record_recycle">
+		<tr class="skeletonRow" data-record-index="">
+			<td class="numeric hidden" data-field-name="divisionID"></td>
+			<td class="numeric hidden" data-field-name="departmentID"></td>
+			<td class="numeric hidden" data-field-name="objectiveID"></td>
+			<td class="numeric hidden" data-field-name="itemID"></td>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="text" data-field-name="itemTitle"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="currency" data-field-name="unitCost"></td>
+			<td class="currency" data-field-name="recycleCost"></td>
+			<td class="numeric" data-field-name="quantity"></td>
+			<td class="currency" data-field-name="reduction"></td>
+			<td class="currency" data-field-name="monthlyReductionTarget"></td>
+			<td class="percent" data-field-name="achieveRate"></td>
+			<td class="longText " data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_scrap_itemize 加工課-印刷組 加工課-噴漆組 委外加工課">
+	<caption>降低報廢(明細)</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="recordDate">記錄日期</th>
+			<th class="text" data-field-name="itemizeIndex">項次</th>
+			<th class="text" data-field-name="productReference">產品編號</th>
+			<th class="text" data-field-name="productionCost">製造成本</th>
+			<th class="text" data-field-name="quantity">報廢數量</th>
+			<th class="text" data-field-name="scrapCost">報廢成本</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="recordDate">記錄日期</th>
+			<th class="text" data-field-name="itemizeIndex">項次</th>
+			<th class="text" data-field-name="productReference">產品編號</th>
+			<th class="text" data-field-name="productionCost">製造成本</th>
+			<th class="text" data-field-name="quantity">報廢數量</th>
+			<th class="text" data-field-name="scrapCost">報廢成本</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_scrap_itemize" data-target-table="record_scrap">
+		<tr class="skeletonRow" data-record-index="">
+			<td class="numeric hidden" data-field-name="divisionID"></td>
+			<td class="numeric hidden" data-field-name="departmentID"></td>
+			<td class="numeric hidden" data-field-name="objectiveID"></td>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="date" data-field-name="recordDate"></td>
+			<td class="numeric" data-field-name="itemizeIndex"></td>
+			<td class="text" data-field-name="productReference"></td>
+			<td class="currency" data-field-name="productionCost"></td>
+			<td class="numeric" data-field-name="quantity"></td>
+			<td class="currency" data-field-name="scrapCost"></td>
+			<td class="longText" data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_scrap 加工課-印刷組 加工課-噴漆組 委外加工課">
+	<caption>降低報廢</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="quantity">報廢總數</th>
+			<th class="text" data-field-name="averageScrapCost">平均報廢金額</th>
+			<th class="text" data-field-name="scrapCost">當月報廢金額</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="quantity">報廢總數</th>
+			<th class="text" data-field-name="averageScrapCost">平均報廢金額</th>
+			<th class="text" data-field-name="scrapCost">當月報廢金額</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_scrap">
+		<tr class="skeletonRow" data-record-index="">
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="numeric" data-field-name="quantity"></td>
+			<td class="currency" data-field-name="averageScrapCost"></td>
+			<td class="currency" data-field-name="scrapCost"></td>
+			<td class="currency" data-field-name="reduction"></td>
+			<td class="currency" data-field-name="monthlyReductionTarget"></td>
+			<td class="percent" data-field-name="achieveRate"></td>
+			<td class="longText" data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="dataTable verification verification_severance 倉儲課 檢瓶課 模具維修課 製造課 加工課-噴漆組 工電務課-工務 人事總務課">
+	<caption>人力精簡</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="averageLocalWorkerWage">台籍平均薪資</th>
+			<th class="text" data-field-name="initialLocalWorkerCount">原始台籍人數</th>
+			<th class="text" data-field-name="localWorkerCount">台籍人數</th>
+			<th class="text" data-field-name="averageForeignWorkerWage">外籍平均薪資</th>
+			<th class="text" data-field-name="initialForeignWorkerCount">原始外籍人數</th>
+			<th class="text" data-field-name="foreignWorkerCount">外籍人數</th>
+			<th class="text" data-field-name="severanceCost">資遣費</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</thead>
+	<tfoot data-data-source="none">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text" data-field-name="departmentTitle">單位</th>
+			<th class="text" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="month">月份</th>
+			<th class="text" data-field-name="evaluationMethod">計算方式</th>
+			<th class="text" data-field-name="averageLocalWorkerWage">台籍平均薪資</th>
+			<th class="text" data-field-name="initialLocalWorkerCount">原始台籍人數</th>
+			<th class="text" data-field-name="localWorkerCount">台籍人數</th>
+			<th class="text" data-field-name="averageForeignWorkerWage">外籍平均薪資</th>
+			<th class="text" data-field-name="initialForeignWorkerCount">原始外籍人數</th>
+			<th class="text" data-field-name="foreignWorkerCount">外籍人數</th>
+			<th class="text" data-field-name="severanceCost">資遣費</th>
+			<th class="text" data-field-name="reduction">當月節省</th>
+			<th class="text" data-field-name="monthlyReductionTarget">每月目標</th>
+			<th class="text" data-field-name="achieveRate">達成率</th>
+			<th class="text" data-field-name="note">備註</th>
+		</tr>
+	</tfoot>
+	<tbody class="stripe" data-data-source="verification_severance" data-target-table="record_severance">
+		<tr class="skeletonRow" data-record-index="">
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<td class="text" data-field-name="divisionTitle"></td>
+			<td class="text" data-field-name="departmentTitle"></td>
+			<td class="text" data-field-name="objectiveTitle"></td>
+			<td class="numeric" data-field-name="year"></td>
+			<td class="numeric" data-field-name="month"></td>
+			<td class="longText" data-field-name="evaluationMethod"></td>
+			<td class="currency" data-field-name="averageLocalWorkerWage"></td>
+			<td class="numeric" data-field-name="initialLocalWorkerCount"></td>
+			<td class="numeric" data-field-name="localWorkerCount"></td>
+			<td class="currency" data-field-name="averageForeignWorkerWage"></td>
+			<td class="numeric" data-field-name="initialForeignWorkerCount"></td>
+			<td class="numeric" data-field-name="foreignWorkerCount"></td>
+			<td class="currency" data-field-name="severanceCost"></td>
+			<td class="currency" data-field-name="reduction"></td>
+			<td class="currency" data-field-name="monthlyReductionTarget"></td>
+			<td class="percent" data-field-name="achieveRate"></td>
+			<td class="longText" data-field-name="note"></td>
+		</tr>
+	</tbody>
+</table>

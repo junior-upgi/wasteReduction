@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+	<head>
+		<meta charset="utf-8" http-equiv="pragma" content="no-cache" />
+		<title>七大浪費專案網頁</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/navigation.css" />
+		<link rel="stylesheet" type="text/css" href="css/report.css" />
+	</head>
+	<body>
+		<div class="siteContainer">
+			<header class="headerContainer">
+				<hgroup class="headerGroup">
+					<h3>
+						<span class="mainTitle">七大浪費專案網頁 (<span id="reportingYear">2016</span>年度) - </span>
+						<span class="extendedTitle">專案概況</span>
+					</h3>
+				</hgroup>
+			</header>
+			<nav class="navigationContainer">
+				<div class="menuBar mainMenuContainer">
+					<div class="mainMenuLabel active" data-target-Submenu="overview">專案概況</div>
+					<div class="mainMenuLabel" data-target-Submenu="objective">目標設定</div>
+					<div class="mainMenuLabel" data-target-Submenu="performance">作業實績</div>
+					<div class="mainMenuLabel" data-target-Submenu="verify">績效驗證</div>
+					<div class="mainMenuLabel" data-target-Submenu="expense">費用比較</div>
+					<!--<div class="mainMenuLabel" data-target-Submenu="dataInput">資料登入</div>-->
+				</div>
+				<div class="menuBar submenuContainer overview active">
+					<div class="submenuLabel overview defaultLabel active" data-report-file="overview_division">部門專案概況</div>
+					<div class="submenuLabel overview" data-report-file="overview_department">單位專案概況</div>
+				</div>
+				<div class="menuBar submenuContainer objective inactive">
+					<div class="submenuLabel objective defaultLabel" data-report-file="objectiveList_detail_ready">追蹤項目列表</div>
+					<div class="submenuLabel objective" data-report-file="objectiveList_detail_pending">待議項目列表</div>
+					<div class="submenuLabel objective" data-report-file="objectiveList_detail_closed">暫緩項目列表</div>
+				</div>
+				<div class="menuBar submenuContainer performance inactive">
+					<div class="submenuLabel performance defaultLabel" data-report-file="performanceChart_division">部門實績統計</div>
+					<div class="submenuLabel performance" data-report-file="performanceChart_department">單位實績統計</div>
+					<div class="submenuLabel performance" data-report-file="performanceChart_detail">實績明細表</div>
+				</div>
+				<div class="menuBar submenuContainer verify inactive">
+					<div class="submenuLabel verify defaultLabel" data-report-file="verification">採購資材課</div>
+					<div class="submenuLabel verify" data-report-file="verification">倉儲課</div>
+					<div class="submenuLabel verify" data-report-file="verification">設計課-製成品組</div>
+					<div class="submenuLabel verify" data-report-file="verification">檢瓶課</div>
+					<div class="submenuLabel verify" data-report-file="verification">模具維修課</div>
+					<div class="submenuLabel verify" data-report-file="verification">製造課</div>
+					<div class="submenuLabel verify" data-report-file="verification">充填組立課</div>
+					<div class="submenuLabel verify" data-report-file="verification">加工課-印刷組</div>
+					<br>
+					<div class="submenuLabel verify" data-report-file="verification">加工課-噴漆組</div>
+					<div class="submenuLabel verify" data-report-file="verification">塑化課</div>
+					<div class="submenuLabel verify" data-report-file="verification">工電務課-工務</div>
+					<div class="submenuLabel verify" data-report-file="verification">工電務課-電務</div>
+					<div class="submenuLabel verify" data-report-file="verification">人事總務課</div>
+					<div class="submenuLabel verify" data-report-file="verification">品管課</div>
+					<div class="submenuLabel verify" data-report-file="verification">委外加工課</div>
+				</div>
+				<div class="menuBar submenuContainer expense inactive">
+					<div class="submenuLabel expense defaultLabel" data-report-file="expenseComparison_overall_2016_annual">整體年度費用統計</div>
+					<div class="submenuLabel expense" data-report-file="expenseComparison_division_2016_annual">部門年度費用統計</div>
+					<div class="submenuLabel expense" data-report-file="expenseComparison_department_2016_annual">單位年度費用統計</div>
+				</div>
+				<!--
+					<div class="menuBar submenuContainer dataInput inactive">
+					<div class="submenuLabel dataInput defaultLabel" data-report-file="">未啟用</div>
+					</div>
+				-->
+			</nav>
+			<section class="articleContainer" style="display:none;"></section>
+			<footer class="footerContainer">&copy 統義玻璃工業股份有限公司</footer>
+		</div>
+		<img id="companyLogo" src="image/upg_logo_130^57.png" />
+	</body>
+</html>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" charset="utf-8"></script>
+<script src="javascript/displayManipulation.js" charset="utf-8"></script>
+<script src="javascript/reportGeneration.js" charset="utf-8"></script>
+<script src="javascript/initialize.js" charset="utf-8"></script>
+<script src="javascript/navigation.js" charset="utf-8"></script>
+<script>
+	//window.location.href = 'http://upgiserver86/wasteReduction/index.html';
+</script>

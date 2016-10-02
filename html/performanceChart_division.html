@@ -1,0 +1,88 @@
+<div class="tableToggleMenu">
+	<div class="timePeriodToggle active" data-time-period="firstQuarter">第一季</div>
+	<div class="timePeriodToggle active" data-time-period="secondQuarter">第二季</div>
+	<div class="timePeriodToggle active" data-time-period="thirdQuarter">第三季</div>
+	<div class="timePeriodToggle" data-time-period="fourthQuarter">第四季</div>
+</div>
+
+<table class="dataTable performanceChart_division">
+	<caption class="dataTable performanceChart_division">部門實績統計</caption>
+	<thead>
+		<tr>
+			<th class="text hidden" data-field-name="divisionID">divisionID</th>
+			<th class="text hidden" data-field-name="departmentID">departmentID</th>
+			<th class="text hidden" data-field-name="objectiveID">objectiveID</th>
+			<th class="text" data-field-name="divisionTitle">部門</th>
+			<th class="text hidden" data-field-name="departmentTitle">單位</th>
+			<th class="text hidden" data-field-name="objectiveTitle">作業項目</th>
+			<th class="text" data-field-name="year">年度</th>
+			<th class="text" data-field-name="annualReductionTarget">節省目標</th>
+			<th class="text firstQuarter" data-field-name="1">一月</th>
+			<th class="text firstQuarter" data-field-name="2">二月</th>
+			<th class="text firstQuarter" data-field-name="3">三月</th>
+			<th class="text secondQuarter" data-field-name="4">四月</th>
+			<th class="text secondQuarter" data-field-name="5">五月</th>
+			<th class="text secondQuarter" data-field-name="6">六月</th>
+			<th class="text thirdQuarter" data-field-name="7">七月</th>
+			<th class="text thirdQuarter" data-field-name="8">八月</th>
+			<th class="text thirdQuarter" data-field-name="9">九月</th>
+			<th class="hidden text fourthQuarter" data-field-name="10">十月</th>
+			<th class="hidden text fourthQuarter" data-field-name="11">十一月</th>
+			<th class="hidden text fourthQuarter" data-field-name="12">十二月</th>
+			<th class="text" data-field-name="cumulativeProgress">累計實績</th>
+			<th class="text" data-field-name="achieveRate">總達成率</th>
+		</tr>
+	</thead>
+	<tfoot data-data-Source="performanceChart_overall">
+		<tr>
+			<th class="text hidden" data-field-name="divisionID"></th>
+			<th class="text hidden" data-field-name="departmentID"></th>
+			<th class="text hidden" data-field-name="objectiveID"></th>
+			<th class="text" data-field-name="divisionTitle"></th>
+			<th class="text hidden" data-field-name="departmentTitle"></th>
+			<th class="text hidden" data-field-name="objectiveTitle"></th>
+			<th class="numeric" data-field-name="year"></th>
+			<th class="currency" data-field-name="annualReductionTarget"></th>
+			<th class="currency firstQuarter" data-field-name="1"></th>
+			<th class="currency firstQuarter" data-field-name="2"></th>
+			<th class="currency firstQuarter" data-field-name="3"></th>
+			<th class="currency secondQuarter" data-field-name="4"></th>
+			<th class="currency secondQuarter" data-field-name="5">五月</th>
+			<th class="currency secondQuarter" data-field-name="6"></th>
+			<th class="currency thirdQuarter" data-field-name="7"></th>
+			<th class="currency thirdQuarter" data-field-name="8"></th>
+			<th class="currency thirdQuarter" data-field-name="9"></th>
+			<th class="hidden currency fourthQuarter" data-field-name="10"></th>
+			<th class="hidden currency fourthQuarter" data-field-name="11"></th>
+			<th class="hidden currency fourthQuarter" data-field-name="12"></th>
+			<th class="currency" data-field-name="cumulativeProgress"></th>
+			<th class="percent" data-field-name="achieveRate"></th>
+		</tr>
+		</tfoot>
+		<tbody class="stripe" data-data-Source="performanceChart_division">
+		<tr class="skeletonRow" data-record-index="">
+		<td class="numeric hidden" data-field-name="divisionID"></td>
+		<td class="numeric hidden" data-field-name="departmentID"></td>
+		<td class="numeric hidden" data-field-name="objectiveID"></td>
+		<td class="text" data-field-name="divisionTitle"></td>
+		<td class="text hidden" data-field-name="departmentTitle"></td>
+		<td class="text hidden" data-field-name="objectiveTitle"></td>
+		<td class="numeric" data-field-name="year"></td>
+		<td class="currency" data-field-name="annualReductionTarget"></td>
+		<td class="currency firstQuarter" data-field-name="1"></td>
+		<td class="currency firstQuarter" data-field-name="2"></td>
+		<td class="currency firstQuarter" data-field-name="3"></td>
+		<td class="currency secondQuarter" data-field-name="4"></td>
+		<td class="currency secondQuarter" data-field-name="5"></td>
+		<td class="currency secondQuarter" data-field-name="6"></td>
+		<td class="currency thirdQuarter" data-field-name="7"></td>
+		<td class="currency thirdQuarter" data-field-name="8"></td>
+		<td class="currency thirdQuarter" data-field-name="9"></td>
+		<td class="hidden currency fourthQuarter" data-field-name="10"></td>
+		<td class="hidden currency fourthQuarter" data-field-name="11"></td>
+		<td class="hidden currency fourthQuarter" data-field-name="12"></td>
+		<td class="currency" data-field-name="cumulativeProgress"></td>
+		<td class="percent" data-field-name="achieveRate"></td>
+		</tr>
+		</tbody>
+		</table>				

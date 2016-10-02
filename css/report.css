@@ -1,0 +1,96 @@
+.articleContainer{
+	/*border:1px solid red;*/
+	height:auto;
+	width:100%;
+	/*margin:140px 5px 3px 5px;*/
+	margin:170px 0px 0px 0px;
+	padding-top:0px;
+	padding-bottom:25px;
+}
+
+.reportContainer{
+	/*border:1px solid blue;*/
+	margin:0px 0px 0px 0px;
+	padding-bottom:0px;
+}
+
+.dataTable{
+	border:2px solid black;
+	border-collapse:collapse;
+	margin:auto;
+}
+
+.dataTable caption{
+	margin:5px 0px 5px 0px;
+	font-weight:bold;
+	font-size:130%;
+}
+
+.hidden{display:none;}
+
+thead tr th{
+	font-size:80%;
+	padding:0px 10px 5px 10px;
+	vertical-align:bottom;
+	border-bottom:2px solid black;
+}
+tfoot tr th{
+	font-size:80%;
+	padding:5px 5px 5px 5px;
+	vertical-align:top;
+	border-top:2px solid black;
+}
+tbody tr td{
+	border:1px solid gray;
+	/*border:1px solid black;*/
+	padding:5px 5px 5px 5px;
+	font-size:80%;
+	vertical-align:middle;
+}
+
+.text{
+	text-align:center;
+}
+.date{
+	text-align:center;
+}
+.numeric{
+	padding:5px 1px 5px 1px;
+	text-align:center;
+}
+.currency{
+	padding:5px 10px 5px 10px;
+	text-align:right;
+}
+.currencyShorten{
+	text-align:right;
+}
+.percent{
+	padding:5px 5px 5px 1px;
+	text-align:right;
+}
+.longText{
+	font-size:xx-small;
+	text-align:left;
+	vertical-align:top;
+}
+
+tbody.stripe tr:nth-child(odd){
+	background-color:#F1F1F1;
+	/*background-color:#B3CCFF;*/
+	color:black;
+}
+
+tbody.stripe tr:nth-child(odd):hover{
+	color:black;
+	/*background-color:#0066FF;*/
+	background-color:#CC6699;
+	/*color:#FF6600;*/
+}
+
+tbody.stripe tr:nth-child(even){}
+
+tbody.stripe tr:hover{
+	color:black;
+	background-color:#CC6699;
+}
