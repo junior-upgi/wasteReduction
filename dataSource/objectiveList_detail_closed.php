@@ -1,7 +1,7 @@
 <?php
 	header("Content-Type:application/json;charset=utf-8");
 	try{
-		$connection=new PDO('mysql:host=127.0.0.1;dbname=wasteReduction;charset=utf8','wasteReduction','');
+		$connection=new PDO('mysql:host=127.0.0.1;dbname=wasteReduction;charset=utf8','wasteReduction','wasteReduction');
 		$connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 	}catch(PDOException $error){
 		die($error->getMessage());
